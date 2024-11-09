@@ -1,0 +1,169 @@
+
+/* =====================Formatação===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 65.2%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif,;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* ====================header==================== */
+.banner {
+    width: 100%;
+    height: 30rem;
+    background-color: #333;
+    background-image: url(./img/wallpaper.jfif);
+    background-repeat: no-repeat;
+    box-sizing: auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* ===================main=================== */
+.content {
+    background-color: rgb(163, 163, 163);
+    background-size: cover;
+    background-position: auto;
+    padding: 20px;
+}
+
+.sobre-serie, .autor {
+    margin-bottom: 40px;
+}
+
+.sobre-serie h2, .autor h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sobre-serie p, .autor p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.imagens-serie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens-serie img {
+    width: 20%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.imagem-autor img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* ====================footer==================== */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* responsividade */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 200px; 
+    }
+
+    .sobre-serie h2, .autor h2 {
+        font-size: 20px;
+    }
+
+    .sobre-serie p, .autor p {
+        font-size: 14px;
+    }
+
+    .imagem-autor img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .imagens-serie img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .banner {
+        height: 220px; 
+    }
+
+    .sobre-serie h2, .autor h2 {
+        font-size: 22px;
+    }
+
+    .sobre-serie p, .autor p {
+        font-size: 15px;
+    }
+
+    .imagem-autor img {
+        max-width: 150px; 
+    }
+}
